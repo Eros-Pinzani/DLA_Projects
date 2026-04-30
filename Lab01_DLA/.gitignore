@@ -25,6 +25,13 @@ checkpoints/
 
 # Dataset and local data artifacts
 data/
+_data/
+*.ppm
+*.csv
+
+# Notebook backups and temporary exports
+*Backup.ipynb
+*.tmp.ipynb
 
 # OS/editor clutter
 .DS_Store

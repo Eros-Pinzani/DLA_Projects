@@ -35,3 +35,6 @@ Thumbs.db
 *.bin
 *.pt
 *.pth
+
+# TextToImageApp generated retrieval index artifacts
+TextToImageApp/index/

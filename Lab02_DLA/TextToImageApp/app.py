@@ -20,11 +20,13 @@ from transformers import CLIPModel, CLIPProcessor
 # ---------------------------------------------------------------------------
 # Configuration -- must be kept in sync with build_index.py
 # ---------------------------------------------------------------------------
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 CLIP_MODEL_NAME = "openai/clip-vit-base-patch16"  # Must be the SAME checkpoint
                                                    # used in build_index.py, otherwise
                                                    # text and image embeddings would
                                                    # live in different (incompatible) spaces.
-OUTPUT_DIR = "index"                              # Where build_index.py saves its output.
+OUTPUT_DIR = os.path.join(BASE_DIR, "index")      # Where build_index.py saves its output.
 EMBEDDINGS_PATH = os.path.join(OUTPUT_DIR, "embeddings.pt")
 PATHS_PATH = os.path.join(OUTPUT_DIR, "paths.txt")
 DEFAULT_TOP_K = 10   # Default number of results shown (adjustable via the slider below).

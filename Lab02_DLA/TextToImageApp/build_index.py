@@ -38,7 +38,8 @@ CLIP_MODEL_NAME = "openai/clip-vit-base-patch16"  # patch16 = smaller patches = 
                                                    # visual features than patch32, at the cost
                                                    # of somewhat more compute.
 BATCH_SIZE = 32                   # How many images CLIP encodes at once (GPU permitting).
-OUTPUT_DIR = "index"               # Everything this script produces goes in here.
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_DIR = os.path.join(BASE_DIR, "index")   # Everything this script produces goes in here.
 IMAGES_DIR = os.path.join(OUTPUT_DIR, "images")   # Where individual images get saved.
 EMBEDDINGS_PATH = os.path.join(OUTPUT_DIR, "embeddings.pt")
 PATHS_PATH = os.path.join(OUTPUT_DIR, "paths.txt")

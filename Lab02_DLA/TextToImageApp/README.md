@@ -82,10 +82,18 @@ full re-indexing on the next launch.
 
 ## Running the app
 
-From inside the `TextToImageApp/` folder, with the environment set up:
+From inside the `TextToImageApp/` folder:
 
 ```bash
 pip install -r requirements.txt
+python app.py
+```
+
+For an exact reproduction of the tested environment (pinned versions),
+install from [`requirements-freeze.txt`](./requirements-freeze.txt) instead:
+
+```bash
+pip install -r requirements-freeze.txt
 python app.py
 ```
 

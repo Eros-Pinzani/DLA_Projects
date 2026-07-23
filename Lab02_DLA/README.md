@@ -71,10 +71,17 @@ pandas
 matplotlib
 ```
 
-Install with:
+For a quick setup:
 
 ```bash
 pip install torch transformers datasets scikit-learn numpy pandas matplotlib
+```
+
+For an exact reproduction of the tested environment (pinned versions),
+install from [`requirements-freeze.txt`](./requirements-freeze.txt) instead:
+
+```bash
+pip install -r requirements-freeze.txt
 ```
 
 A CUDA-capable GPU is recommended for fine-tuning (Exercise 2.3), but the

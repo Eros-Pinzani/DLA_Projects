@@ -50,10 +50,17 @@ scipy
 tqdm
 ```
 
-Install all dependencies with:
+For a quick setup:
 
 ```bash
 pip install torch torchvision numpy matplotlib scikit-learn scipy tqdm
+```
+
+For an exact reproduction of the tested environment (pinned versions),
+install from [`requirements-freeze.txt`](./requirements-freeze.txt) instead:
+
+```bash
+pip install -r requirements-freeze.txt
 ```
 
 A CUDA-capable GPU is recommended for feature extraction and fine-tuning,

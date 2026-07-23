@@ -1,0 +1,11 @@
+datasets==5.0.0
+gradio==6.20.0
+gradio_client==2.5.0
+hf-gradio==0.4.1
+pillow==12.1.1
+pytorch-triton-rocm==3.5.1
+torch==2.9.1+rocm6.4
+torchaudio==2.9.1+rocm6.4
+torchvision==0.24.1+rocm6.4
+tqdm==4.67.3
+transformers==5.13.1

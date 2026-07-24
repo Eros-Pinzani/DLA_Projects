@@ -18,12 +18,6 @@ env/
 wandb/
 runs/
 logs/
-checkpoints/
-checkpoints/*
-checkpoints/**
-*.ckpt
-*.pt
-*.pth
 
 # Dataset and local data artifacts
 data/

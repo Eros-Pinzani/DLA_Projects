@@ -51,9 +51,7 @@ def build_index():
     to OUTPUT_DIR. Safe to call both as a standalone script and as an import
     from app.py (e.g. to auto-build the index the first time it's missing).
     """
-    # Use the GPU if one is available (works transparently with ROCm on AMD
-    # GPUs too, since PyTorch exposes the same torch.cuda.* API regardless
-    # of vendor).
+    
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print(f"Using device: {device}")
 
